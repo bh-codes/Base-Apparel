@@ -274,7 +274,11 @@ button {
       body {
         background: url('../images/bg-pattern-desktop.svg');
         background-size: cover;
-        min-width: 768px;
+        max-width: 1440px;
+      }
+
+      img.logo {
+        padding: 75px 50px;
       }
 
       .container {
@@ -283,11 +287,23 @@ button {
       }
 
       .info-container {
-        max-width: 500px;
+        padding: 0 300px 0 50px;
       }
 
+      h1 {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: flex-start;
+        font-size: 3.5em;
+      }
+
+      p {
+        text-align: left;
+      }
+
+
       picture img {
-        max-width:300px
+        float: right;
       }
 
 
