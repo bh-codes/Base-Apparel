@@ -21,22 +21,25 @@
   </style>
 </head>
 <body>
-  <header>
-    <logo><img src="images/logo.svg" alt="Base Apparel logo"></logo>
+  <logo>
+    <img class="logo" src="images/logo.svg" alt="Base Apparel logo">
+  </logo>
+  <main class="container">
     <picture>
       <source media="(min-width: 768px)" srcset="images/hero-desktop.jpg" />
       <source media="(min-width: 375px)" srcset="images/hero-mobile.jpg" />
       <img src="images/hero-mobile.jpg" alt="Hero picture" />
     </picture>
-  </header>
-  <main class="container">
-    <h1><span>We're</span> coming soon</h1>
-    <p>Hello fellow shoppers! We're currently building our new fashion store. 
-      Add your email below to stay up-to-date with announcements and our launch deals.</p>
-    <form>
-      <input type="text" name="email" value="Email Address" />
-      <button><img src="images/icon-arrow.svg" alt="arrow icon image"></button>
-    </form>
+    <div class="info-container">
+      <h1><span>We're</span> coming soon</h1>
+      <p>Hello fellow shoppers! We're currently building our new fashion store. 
+        Add your email below to stay up-to-date with announcements and our launch deals.</p>
+      <form>
+        <input class="email" type="email" placeholder="Email Address" data-email-field>
+        <button><img src="images/icon-arrow.svg" alt="arrow icon image"></button>
+      </form>
+    </div>
+    </picture>
   </main>
 
   <script>

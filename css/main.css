@@ -100,11 +100,12 @@ body {
   background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
 }
 
-picture {
-  width: 335px;
+.container {
+  display:
 }
-logo img {
-  padding: 30px 25px;
+
+img.logo {
+  padding: 30px;
 }
 
 h1 {
@@ -114,8 +115,8 @@ h1 {
   text-transform: uppercase;
   letter-spacing:10px;
   text-align: center;
-  padding-top: 40px;
   line-height: 1.12em;
+  margin-top: 60px;
 }
 
 span {
@@ -149,9 +150,13 @@ input:focus{
   outline: none;
 }
 
-input[type=text] {
+input[type=email] {
   color: hsl(0, 36%, 70%);
   padding: 0 0 0 20px;
+}
+
+input::placeholder {
+  color: hsl(0, 36%, 70%);
 }
 
 button {
@@ -264,24 +269,27 @@ button {
   /* Style adjustments for viewports that meet the condition */
 }
 
-@media only screen and (min-width:768px) {
+@media only screen and (min-width: 768px) {
       /*Desktop styles here*/
       body {
         background: url('../images/bg-pattern-desktop.svg');
-        display: flex;
-        margin: auto;
-        align-items: center;
-        justify-content: center;
-      }
-
-      picture img {
-      
+        background-size: cover;
+        min-width: 768px;
       }
 
       .container {
-        max-width: 600px;
-        padding-top: 0;
+        display: flex;
+        flex-direction: row-reverse;
       }
+
+      .info-container {
+        max-width: 500px;
+      }
+
+      picture img {
+        max-width:300px
+      }
+
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
