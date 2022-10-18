@@ -145,7 +145,7 @@ form {
 }
 
 input {
-  width: 358px;
+  width: 335px;
   height: 55px;
   border-radius: 30px;
   border: hsl(0, 36%, 70%) solid 1px;
@@ -153,12 +153,12 @@ input {
 }
 
 input:focus{
-  outline: 2px solid hsl(0, 93%, 68%);
+  outline: 1px solid hsl(0, 93%, 68%);
 }
 
 input[type=email] {
   color: hsl(0, 36%, 70%);
-  padding: 0 0 0 20px;
+  padding: 0 0 0 40px;
 }
 
 input::placeholder {
@@ -168,6 +168,7 @@ input::placeholder {
 button {
   width: 80px;
   height: 57px;
+  /* box-shadow: 0px 5px 30px pink; */
   border-radius: 30px;
   border: none;
   position: relative;
@@ -176,11 +177,12 @@ button {
   background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
 }
 
-.error-message { /*work on position*/
+.error-message {
   color: hsl(0, 74%, 74%);
-  position: absolute;
-  top: 143%;
-  left: 88px;
+  float: left;
+  position: relative;
+  bottom: 49px;
+  padding-left: 41px;
 }
 
 .attribution {
@@ -290,7 +292,7 @@ button {
       }
 
       img.logo {
-        padding: 65px 100px;
+        padding: 65px 90px;
       }
 
       .container {
@@ -300,6 +302,7 @@ button {
 
       .info-container {
         padding: 0 170px 0 100px;
+        max-width: 482px;
       }
 
       h1 {
@@ -307,6 +310,7 @@ button {
         font-size: 3.35em;
         margin: 70px 0 15px 0;
         display: table-caption;
+        letter-spacing: 37px;
       }
 
       p {
@@ -321,6 +325,20 @@ button {
       picture img {
         float: right;
         max-width: 700px;
+      }
+
+      input {
+        width: 435px;
+      }
+
+      button {
+        left: 106%;
+      }
+
+      .error-message {
+        bottom: 80px;
+      }
+
 
 
 @media print,
