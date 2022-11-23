@@ -130,12 +130,15 @@ p {
   text-align: center;
   font-size: 1.12em;
   color: hsl(0, 36%, 70%);
+  max-width: 325px;
+  margin: auto;
 }
 
 form {
-  margin-top: 40px;
+  padding-top: 40px;
   border: none;
-  max-width: 375px;
+  margin: auto;
+  max-width: 325px;
 }
 
 .icon-error {
@@ -145,11 +148,12 @@ form {
 }
 
 input {
-  width: 335px;
+  width: 290px;
   height: 54px;
   border-radius: 30px;
   border: hsl(0, 36%, 70%) solid 1px;
   background-color: transparent;
+  margin-left: 10px;
 }
 
 input:focus{
@@ -158,7 +162,7 @@ input:focus{
 
 input[type=email] {
   color: hsl(0, 36%, 70%);
-  padding: 0 0 0 40px;
+  padding: 0 0 0 20px;
 }
 
 input::placeholder {
@@ -176,7 +180,7 @@ button {
   border-radius: 30px;
   border: none;
   position: relative;
-  left: 80%;
+  left: 75%;
   bottom: 57px;
   background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
 }
@@ -320,10 +324,12 @@ button {
       p {
         text-align: left;
         margin: 30px 0;
-      }
+        max-width: 550px;
+       }
 
       form {
         margin-top: 40px;
+        margin-left: 0;
       }
 
       picture img {
@@ -335,8 +341,12 @@ button {
         width: 435px;
       }
 
+      input.email {
+        margin: 0;
+      }
+
       button {
-        left: 106%;
+        left: 117%;
       }
 
       .error-message {
